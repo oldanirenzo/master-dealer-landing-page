@@ -40,7 +40,7 @@ export const Contact = () => {
             data: {
                 'name': formValues.name,
                 'email': formValues.email,
-                'phone': formValues.phone
+                'phone': formValues.phone,
             }
         })
         alert("Thanks! We'll be in touch.")

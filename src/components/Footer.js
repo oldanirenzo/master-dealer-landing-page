@@ -9,7 +9,7 @@ export const Footer = () => {
                 <div className="footer-left">
                     <h2>
                         Why choose M+S Electric
-                </h2>
+                    </h2>
                     <ul>
                         <li>24 Hour a day emergency service</li>
                         <li>Certified Experience</li>

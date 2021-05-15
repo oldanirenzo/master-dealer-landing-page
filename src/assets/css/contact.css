@@ -12,8 +12,9 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  font-size: large;
 }
-.contact-info h1{
+.contact-info h1 {
   margin-top: 30px;
   margin-left: 10%;
   text-transform: uppercase;
@@ -38,6 +39,14 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  border-radius: 5px;
+  font-size: medium;
+  transform: scale(1);
+  transition: all 0.3s 0s ease-in-out;
+}
+.contact-form input:hover,
+.contact-form input:focus {
+  transform: scale(1.05);
 }
 
 .contact-form input[type="submit"] {
@@ -45,6 +54,7 @@
   color: white;
   text-transform: uppercase;
   text-align: center;
+  font-weight: bolder;
   width: 20%;
   padding: 10px;
   margin-right: auto;
@@ -52,12 +62,37 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+  .contact-form input[type="submit"] {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .contact {
+    text-align: center;
+    margin-right: 10%;
+  }
+
+  .contact-form {
+    margin-left: 10%;
+  }
+
+  .contact-form input[type="submit"] {
+    width: 25%;
+  }
+}
+
 @media screen and (max-width: 480px) {
-  .contact{
+  .contact {
     text-align: center;
   }
 
-  .contact-info h1{
+  .contact-info {
+    font-size: medium;
+  }
+
+  .contact-info h1 {
     margin-top: 30px;
     margin-left: 0;
     text-transform: uppercase;
@@ -73,5 +108,6 @@
     margin-left: 0;
     margin-right: auto;
     width: 90%;
+    font-size: small;
   }
 }

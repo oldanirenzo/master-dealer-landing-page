@@ -18,6 +18,10 @@ footer {
     justify-content: space-evenly;
   }
   
+  footer ul{
+    font-style: italic;
+  }
+
   footer .footer-left ul{
     line-height: 200%;
   }
