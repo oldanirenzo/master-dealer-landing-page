@@ -44,6 +44,7 @@ export const Contact = () => {
         });
 
         reset();
+        alert("Thanks! We'll be in touch.")
     }
 
 
