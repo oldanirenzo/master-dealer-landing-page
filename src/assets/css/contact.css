@@ -64,7 +64,9 @@
 
 @media screen and (max-width: 1024px) {
   .contact-form input[type="submit"] {
+    width: 50%;
     margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -77,9 +79,13 @@
   .contact-form {
     margin-left: 10%;
   }
+  .contact-info h1,
+  .contact-info p {
+    margin-left: 15%;
+  }
 
   .contact-form input[type="submit"] {
-    width: 25%;
+    margin-left: 28%;
   }
 }
 
