@@ -8,7 +8,8 @@ export const Contact = () => {
     const initialForm = {
         name: '',
         email: '',
-        phone: ''
+        phone: '',
+        message: '',
     }
     const [formValues, handleInputChange, reset] = useForm(initialForm)
 
@@ -41,10 +42,13 @@ export const Contact = () => {
                 'email': formValues.email,
                 'phone': formValues.phone
             }
-        });
+        }).then(res => {
+            alert("Thanks! We'll be in touch.")
+        })
+            .then(() => {
+                reset();
+            })
 
-        reset();
-        alert("Thanks! We'll be in touch.")
     }
 
 
@@ -59,7 +63,7 @@ export const Contact = () => {
                 <input type="text" name="name" value={formValues.name} placeholder="Full Name" onChange={handleInputChange} />
                 <input type="email" name="email" value={formValues.email} placeholder="E-mail Address" onChange={handleInputChange} />
                 <input type="number" name="phone" value={formValues.phone} placeholder="Phone" onChange={handleInputChange} />
-                <input type="text" name="message" placeholder="Message" />
+                <input type="text" name="message" placeholder="Message" value={formValues.message} onChange={handleInputChange} />
                 <input type="submit" value="Send" />
             </form>
         </div>
