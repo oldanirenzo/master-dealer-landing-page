@@ -42,13 +42,10 @@ export const Contact = () => {
                 'email': formValues.email,
                 'phone': formValues.phone
             }
-        }).then(res => {
-            alert("Thanks! We'll be in touch.")
         })
-            .then(() => {
-                reset();
-            })
+        alert("Thanks! We'll be in touch.")
 
+        reset();
     }
 
 
