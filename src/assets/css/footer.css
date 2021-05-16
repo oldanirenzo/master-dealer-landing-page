@@ -51,9 +51,7 @@ footer .footer-right ul {
   }
 
   footer ul {
-    position: relative;
-    list-style-position: outside;
-    left: -15px;
+    list-style-position: inside;
   }
 
   footer .container {
