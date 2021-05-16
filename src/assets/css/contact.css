@@ -5,19 +5,21 @@
   justify-content: space-around;
   align-items: flex-start;
   text-align: left;
-  overflow: hidden;
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  font-size: large;
+  font-size: larger;
 }
 .contact-info h1 {
   margin-top: 30px;
   margin-left: 10%;
   text-transform: uppercase;
+  font-weight: bolder;
+  color: black;
+  font-size: 2em;
 }
 .contact-info p {
   margin-top: 30px;
@@ -29,13 +31,14 @@
   flex-direction: column;
   justify-content: center;
   margin: 30px 0 20px 0;
-  padding: 5px;
   min-width: 300px;
   width: 30%;
 }
 .contact-form input {
+  background-color: #bd9235;
+  color: white;
   padding: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -44,6 +47,12 @@
   transform: scale(1);
   transition: all 0.3s 0s ease-in-out;
 }
+.contact-form input::placeholder {
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+}
+
 .contact-form input:hover,
 .contact-form input:focus {
   transform: scale(1.05);
@@ -68,6 +77,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .contact-form input[type="submit"] {
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
@@ -79,13 +92,10 @@
   .contact-form {
     margin-left: 10%;
   }
+
   .contact-info h1,
   .contact-info p {
-    margin-left: 15%;
-  }
-
-  .contact-form input[type="submit"] {
-    margin-left: 28%;
+    text-align: center;
   }
 }
 
@@ -110,10 +120,10 @@
 
   .contact-form input {
     padding: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-left: 0;
     margin-right: auto;
-    width: 90%;
+    width: 100%;
     font-size: small;
   }
 }

@@ -1,65 +1,76 @@
 footer {
-    background-color: #fafafa;
-    margin-top: 60px;
-    padding: 20px;
-    justify-content: center;
-    overflow-x: hidden;
+  background-color: #fafafa;
+  margin-top: 60px;
+  padding: 20px;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+footer h2 {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+footer .container {
+  display: flex;
+  padding: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+footer ul {
+  font-style: italic;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer .footer-left ul {
+  line-height: 200%;
+}
+
+footer .footer-mid ul {
+  line-height: 300%;
+}
+
+footer .footer-right ul {
+  line-height: 300%;
+}
+@media screen and (max-width: 1024px) {
+  footer ul {
+    position: relative;
+    left: -15px;
   }
-  
+}
+
+@media screen and (max-width: 900px) {
   footer h2 {
+    margin-top: 20px;
     margin-bottom: 20px;
   }
-  
+
+  footer ul {
+    position: relative;
+    list-style-position: outside;
+    left: -15px;
+  }
+
   footer .container {
     display: flex;
     padding: 30px;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  footer ul{
-    font-style: italic;
+    text-align: center;
+    justify-content: center;
   }
 
-  footer .footer-left ul{
-    line-height: 200%;
-  }
-  
-  footer .footer-mid ul {
-    line-height: 300%;
-  }
-  
-  footer .footer-right ul {
-    line-height: 300%;
+  .footer-left {
+    margin-bottom: 20px;
   }
 
-  @media screen and (max-width: 900px) {
-
-
-    footer h2 {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-  
-    footer ul {
-      list-style-position: inside;
-    }
-  
-    footer .container {
-      display: flex;
-      padding: 30px;
-      flex-direction: column;
-      flex-wrap: wrap;
-      text-align: center;
-      justify-content: center;
-    }
-  
-    .footer-left {
-      margin-bottom: 20px;
-    }
-  
-    .footer-mid {
-      margin-bottom: 20px;
-    }
+  .footer-mid {
+    margin-bottom: 20px;
   }
+}
