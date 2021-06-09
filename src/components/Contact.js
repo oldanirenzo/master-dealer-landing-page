@@ -36,7 +36,7 @@ export const Contact = () => {
 
         axios({
             method: 'post',
-            url: 'https://hook.integromat.com/x42xpo92uru5m36kn3dt7qbdy7zl2u4z',
+            url: '  ',
             data: {
                 'name': formValues.name,
                 'email': formValues.email,
